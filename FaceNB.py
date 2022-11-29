@@ -97,10 +97,10 @@ def Accuracy(pred_y,true_y):
     return Accuracy
 
 def main():
-    trainData="data/face/facedatatrain"
-    DataLabels="data/face/facedatatrainlabels"
-    testData ="data/face/facedatatest"
-    TestLabels="data/face/facedatatestlabels"
+    trainData="/content/ItAI-Proj-2/data/face/facedatatrain"
+    DataLabels="/content/ItAI-Proj-2/data/face/facedatatrainlabels"
+    testData ="/content/ItAI-Proj-2/data/face/facedatatest"
+    TestLabels="/content/ItAI-Proj-2/data/face/facedatatestlabels"
     x_train,y_train=proccessingData(trainData,DataLabels,3)
     x_test, y_test=proccessingData(testData,TestLabels,3)
     DataPercent=int(x_train.shape[0]/10)
